@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Fira+Code:wght@300..700&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <title>Dea Hajrizi • Contact</title>
+</head>
+<body>
+    <!------------------------- NAVIGATION ---------------------------->
+    <nav>
+        <ul id="mainNav">
+            <li><a id="about" href="about.html">about</a></li>
+            <li><a id="work" href="work.html">work</a></li>
+            <li><a id="contact" href="contact.html">contact</a></li>
+        </ul>
+        <!----------------- EXTENDED NAV ----------------->
+        <ul id="navExtend">
+            <li><a id='gday' href="gday.html">G'day Cafe</a></li>
+            <li><a id="bris" href="brisbaneGuide.html">Brisbane Guide</a></li>
+            <li><a id="ge" href="geGuide.html">GeGuide</a></li>
+        </ul>
+    </nav>
+    <!------------------------- HEADER ---------------------------->
+    <header id="header" class="header2"><img src="./img/backgroundimg4.png" alt="Silhouette of mountains"></header>
+    <!------------------------- MAIN CONTENT ---------------------------->
+    <section id="contactMainContent">
+        <div id="titlePageContainer">
+            <div id="titleTextContainer">
+                <p>Have a project in mind or a simple question? I'd love to hear from you! Feel free to drop me a message using the form below.</p>
+            </div>
+        </div>
+        <h3 id="contactH3">contact <span style="color: #F28B88">/</span></h3>
+        <!----------------- FORM ----------------->
+        <form>
+            <div id="messageName"></div>
+            <div id="messageSurname"></div>
+            <input type="text" id="name" name="name" placeholder="Name" pattern="[A-Za-z]{2,}">
+            <input type="text" id="surname" name="surname" placeholder="Surname" pattern="[A-Za-z]{2,}">
+            <div id="messageAddress"></div>
+            <div id="messageNPA"></div>
+            <input type="text" id="address" name="address" placeholder="Address">
+            <input type="text" id="npa" name="npa" placeholder="NPA" pattern="[0-9]{4}">
+            <div id="messageCity"></div>
+            <input type="text" id="city" name="city" placeholder="City">
+            <div id="messageTel"></div>
+            <div id="messageEmail"></div>
+            <input type="tel" id="tel" name="tel" placeholder="Phone number">
+            <input type="email" id="email" name="email" placeholder="E-mail">
+            <div id="messageMsg"></div>
+            <textarea id="msg" placeholder="Message"></textarea>
+            <button id="contactSubmitButton">submit</button>
+        </form>
+        <!----------------- FORM VALIDATION MODAL ----------------->
+        <div id="modalContainer">
+            <div id="modal">
+                <p id="modalText">Your message has been sent!</p>
+                <button id="modalCloseButton">close</button>
+            </div>
+        </div>
+    </section>
+    <!-------------------------- FOOTER --------------------------->
+    <footer>
+        <div id="footerLine"></div>
+        <p id="footerTitle">elsewhere</p>
+        <!----------------- SOCIALS ----------------->
+        <div id="footerSocials">
+            <a href=""><img src="./img/instagramIcon.png" alt="Instagram logo"></a>
+            <a href="https://www.behance.net/deahajrizi" target="_blank"><img src="./img/behanceIcon.png" alt="Behance logo"></a>
+            <a href="https://dribbble.com/deahajrizi" target="_blank"><img src="./img/dribbbleIcon.png" alt="Dribbble logo"></a>
+        </div>
+        <p id="copyright">©2024 Dea Hajrizi</p>
+    </footer>
+    <!------------------------- JAVASCRIPT ---------------------------->
+    <script src="./js/form.js"></script>
+    <script src="./js/activeTab.js"></script>
+</body>
+</html>
